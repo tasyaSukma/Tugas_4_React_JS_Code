@@ -12,6 +12,11 @@ class MenuMakanan extends Component{
 
 		this.pilihPesanan = this.pilihPesanan.bind(this)
 		this.batal = this.batal.bind(this)
+		this.nasiPadang = this.nasiPadang.bind(this)
+		this.sate = this.sate.bind(this)
+		this.soto = this.soto.bind(this)
+		this.nasiUduk = this.nasiUduk.bind(this)
+		this.nasiKuning = this.nasiKuning.bind(this)
 	}
 
 	pilihPesanan(param,e){
@@ -27,46 +32,56 @@ class MenuMakanan extends Component{
 
 	nasiPadang(e){
 		e.preventDefault()
-		this.setState({
-			pesan : "Nasi Padang",
-			jumlah : this.state.jumlah + 1,
-			tampil : true
+		this.setState(function(state,props){
+			return{
+				pesan : "Nasi Padang",
+				jumlah : state.jumlah + 1,
+				tampil : true
+			}
 		})
 	}
 
 	sate(e){
 		e.preventDefault()
-		this.setState({
-			pesan : "Sate",
-			jumlah : this.state.jumlah + 1,
-			tampil : true
+		this.setState(function(state,props){
+			return{
+				pesan : "Sate",
+				jumlah : state.jumlah + 1,
+				tampil : true
+			}
 		})
 	}
 
 	soto(e){
 		e.preventDefault()
-		this.setState({
-			pesan : "Soto",
-			jumlah : this.state.jumlah + 1,
-			tampil : true
+		this.setState(function(state,props){
+			return{
+				pesan : "Soto",
+				jumlah : state.jumlah + 1,
+				tampil : true
+			}
 		})
 	}
 
 	nasiUduk(e){
 		e.preventDefault()
-		this.setState({
-			pesan : "Nasi Uduk",
-			jumlah : this.state.jumlah + 1,
-			tampil : true
+		this.setState(function(state,props){
+			return{
+				pesan : "Nasi Uduk",
+				jumlah : state.jumlah + 1,
+				tampil : true
+			}
 		})
 	}
 
 	nasiKuning(e){
 		e.preventDefault()
-		this.setState({
-			pesan : "Nasi Kuning",
-			jumlah : this.state.jumlah + 1,
-			tampil : true
+		this.setState(function(state,props){
+			return{
+				pesan : "Nasi Kuning",
+				jumlah : state.jumlah + 1,
+				tampil : true
+			}
 		})
 	}
 
